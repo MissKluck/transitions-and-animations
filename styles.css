@@ -13,3 +13,19 @@
 .button-scale:active {
   scale: 0.9;
 }
+
+/* Animations */
+
+.animate-red-to-green {
+  animation-name: red-to-green;
+  animation-duration: 1s;
+}
+
+@keyframes red-to-green {
+  from {
+    color: brown;
+  }
+  to {
+    color: green;
+  }
+}
