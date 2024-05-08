@@ -29,3 +29,30 @@
     color: green;
   }
 }
+
+.animated-ball {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+}
+
+/* Writing with a > means that you choose the thing that is within the element in front of the > */
+.animated-ball > div {
+  background-color: palevioletred;
+  height: 50px;
+  width: 50px;
+  border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
+
+  animation-name: bouncing-ball;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bouncing-ball {
+  to {
+    transform: translateY(150px);
+  }
+}
